@@ -4,8 +4,6 @@ section#product2 {
    background-color: white;
  }
  section#product2 .wrap {
-   
-   flex-direction: row-reverse;
    gap: 40px;
  }
  section#product2 .wrap h2 {
@@ -41,7 +39,6 @@ section#product2 {
  }
  section#product2 .wrap ul li a::after{
    content: "";
-   background-image: url(../img/prod1.png);
    background-repeat: no-repeat;
    background-position: right bottom;
    background-size: contain;
@@ -49,6 +46,18 @@ section#product2 {
    height: 180px;
    display: inline-block;
  }
+section#product2 .wrap ul li:nth-child(1) a::after{
+  background-image: url(../img/prod2-1.png);
+}
+section#product2 .wrap ul li:nth-child(2) a::after{
+  background-image: url(../img/prod2-2.png);
+}
+section#product2 .wrap ul li:nth-child(3) a::after{
+  background-image: url(../img/prod2-3.png);
+}
+section#product2 .wrap ul li:nth-child(4) a::after{
+  background-image: url(../img/prod2-4.png);
+}
  section#product2 .wrap ul li a h3 {
    width: calc(100% / 2);
    width: 100%;

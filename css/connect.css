@@ -32,11 +32,15 @@ section#connect .wrap ul {
   align-items: center;
   gap: 30px;
 }
+section#connect .wrap ul li.slick-active {
+  width: 200px;
+  height: 500px;
+}
 section#connect .wrap ul li:not(:first-child) {
   /*! transform: scale(0.6); */
-  width: 180px;
-  height: 400px;
-  margin-left: 30px;
+  /*! width: 180px; */
+  /*! height: 400px; */
+  /*! margin-left: 30px; */
 }
 section#connect .wrap ul li img {
   width: 100%;

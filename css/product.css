@@ -48,13 +48,21 @@ section#product .wrap ul li a:hover {
 }
 section#product .wrap ul li a::after{
   content: "";
-  background-image: url(../img/prod1.png);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
   width: 120px;
   height: 180px;
   display: inline-block;
+}
+section#product .wrap ul li:nth-child(1) a::after{
+  background-image: url(../img/prod1.png);
+}
+section#product .wrap ul li:nth-child(2) a::after{
+  background-image: url(../img/prod2.png); 
+}
+section#product .wrap ul li:nth-child(3) a::after{
+  background-image: url(../img/prod3.png);
 }
 section#product .wrap ul li a h3 {
   width: calc(100% / 2);
@@ -63,6 +71,7 @@ section#product .wrap ul li a h3 {
 section#product .wrap ul li a p {
   
   width: 60%;
+  color: #888;
 }
 section#product .wrap .pdetail {
   width: calc(100% / 2);
