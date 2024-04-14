@@ -6,11 +6,11 @@
     <title>pf1-Accuniq</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
-    <!-- //구글폰트 -->
+    <!-- 구글폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- 구글폰트// -->
+    <!-- css -->
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/ham.css">
@@ -24,56 +24,26 @@
     <link rel="stylesheet" href="css/footer.css">
     <!-- 제이쿼리 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- <script src="js/jquery-3.7.1.min.js"></script> -->
     <script type="text/javascript">
         $(document).ready(
             function(){
-                // header에 클래스를 붙이시오(fixed)
-                //$().addClass();
-                //$("").addClass();
-                //$("header").addClass();
-                //$("header").addClass("fixed");
                 $("header").addClass("fixed");
-
-                //header태그안의 h1를 클릭하면 실행하시오
-                //$().click();
-                //$("").click();
-                //$("선택자").click();
-                //$("header h1").click();
-                /*
-                    $("header h1").click(
-                        function(){
-
-                        }
-                    );
-                */
                 $("header h1").click(
                     function(){
-
                     }
                 );
 
-                //대메뉴에 클래스를 붙이시오(opacity0)
-                //$("header div.wrap ul.gnb").addClass("opacity0");
-                //햄버거버튼을 클릭하면 실행하시오(대메뉴에 클래스를 없애시오(opacity0))
                 $("header div.wrap div.right > a.ham").click(
                     function(){
-                        //$("header div.wrap ul.gnb").addClass("opacity1");
                         $("header div.wrap ul.gnb").toggleClass("opacity1");
-                        //햄버거에 클래스를 붙여라(x)
-                        //$('header div.wrap div.right > a.ham').addClass("x");
                         $(this).toggleClass("x");
                         return false;
                     }
                 );
                 // 대메뉴 닫기
-                //닫기를 클릭하면 실행하시오
                 $("header .updown").click(function(){
-                    //header에 클래스 붙이기
                     $("header").toggleClass("up");
-                    //닫기에 클래스를 붙이시오(upbg)
-                    // $(".updown").toggleClass("upbg");
-                    $(this).toggleClass("upbg"); //this 클릭한 요소를 의미함/이벤트가 발생한 대상
+                    $(this).toggleClass("upbg");
                     return false;
                 });
             }
